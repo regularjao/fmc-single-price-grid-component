@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    height: 100vh;
+}
+
+.container{
+    width: 85%;
+    max-width: 640px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 16px 16px rgba(60, 60, 80, 0.1);
+}
+
+header{
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px 5px 0 0;
+}
+
+header h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 30px;
+    font-size: 24px;
+}
+
+header h2{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+header p{
+    color: hsl(218, 22%, 67%);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.signup{
+    background-color: hsl(179, 62%, 43%);
+    padding: 40px;
+    width: 100%;
+}
+
+.signup h2{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+#price{
+    display: flex;
+    align-items: center;
+}
+
+.signup p{
+    color: white;
+    padding-bottom: 10px;
+}
+
+#full-access{
+    padding-bottom: 30px;
+}
+
+.signup p strong{
+    font-size: 28px;
+    padding-right: 15px;
+}
+
+.signup p em{
+    font-style: normal;
+    opacity: 0.6;
+}
+
+.signup a{
+    background-color: hsl(71, 73%, 54%);
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 6px 4px rgba(40, 40, 40, 0.1);
+    
+}
+
+.whyus{
+    background-color: rgba(42, 178, 175, 0.7);
+    width: 100%;
+    padding: 40px;
+    color: white;
+}
+
+.whyus h2{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.whyus p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* front-end mentor links */
+.attribution {
+    padding: 20px 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-size: 11px;
+}
+
+/* media queries */
+
+@media screen and (min-width:700px){
+    .container{
+        display: flex;
+        margin: auto;
+    }
+
+    header{
+        flex-grow: 2;
+    }
+
+    .signup{
+        flex: 1;
+        border-radius: 0 0 0 5px;
+    }
+
+    .whyus{
+        flex: 1;
+        border-radius: 0 0 5px 0;
+    }
+}
+
